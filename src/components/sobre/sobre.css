@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+:root {
+    --bg-color: #080808;
+    --second-bg-color: #131313;
+    --text-color: white;
+    --main-color: #00ffee;
+}
+
+html {
+    font-size: 60%;
+}
+
+body {
+    background-color: var(--bg-color);
+}
+
+section {
+    min-height: 100vh;
+    padding: 10rem 12% 10rem ;
+}
+
+.sobre {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15rem;
+}
+
+.sobre-content {
+    display: flex;
+    gap: 22rem;
+}
+
+.sob {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column;
+    border: solid 1px white ;
+    padding: 15px 15px 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.sob:hover {
+    box-shadow: 0 0 25px var(--main-color);
+}
+
+.sob h3 {
+    font-size: 3.8rem;
+    transition: all 0.5s ease-in-out;
+}
+
+.sob h3:hover {
+    transform: scale(1) translateY(-10px);
+    color: #00ffee;
+}
+
+.sob p {
+    font-size: 2.2rem;
+    padding-top: 12px;
+    align-content: baseline;
+    gap: 1rem;
+    word-spacing: 10px;
+}
+
+.content-skills {
+    width: 600px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column;
+    border: solid 1px white ;
+    padding: 15px 15px 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.content-skills:hover {
+    box-shadow: 0 0 25px var(--main-color);
+}
+
+.content-skills h3 {
+    padding-top: 0;
+    font-size: 3.8rem;
+    transition: all 0.5s ease-in-out;
+}
+
+.content-skills h3:hover {
+    color: #00ffee;
+    transform: translateY(-10px);
+}
+
+.skills {
+    padding-top: 1rem;
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+    gap: 1.8rem;
+    font-size: 16px;
+    flex-wrap: wrap;
+}
+
+.skill {
+    cursor: pointer;
+    border: 1px solid var(--main-color);
+    border-radius: 5px;
+    padding: 2px 2px 2px;
+    transition: 0.3s ease-in-out;
+    font-size: 2.2rem;
+    margin: 10 15px;
+}
+
+.skill:hover {
+    background-color: var(--main-color);
+    transform: scale(1.2) translateY(-5px);
+    color: black;
+    box-shadow: 0 0 25px var(--main-color);
+}
+
+@media screen and (max-width: 768px) {
+    .sobre-content {
+        flex-direction: column; /* Coloca as divs em uma coluna */
+        align-items: center; /* Centraliza as divs */
+        gap: 8rem;
+    }
+
+    .sob, .content-skills {
+        width: 100%; /* As divs ocupam toda a largura */
+        text-align: center; /* Centraliza o texto, opcional */
+    }
+}
