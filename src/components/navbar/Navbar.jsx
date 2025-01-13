@@ -15,8 +15,8 @@ const Navbar = () => {
         <nav className="navbar">
             <a href="#home" className="nav-link">INICIO</a>
             <a href="#sobre" className="nav-link">SOBRE</a>
-            <a href="#" className="nav-link">PROJETOS</a>
-            <a href="#" className="nav-link">CONTATO</a>
+            <a href="#project" className="nav-link">PROJETOS</a>
+            <a href="#contato" className="nav-link">CONTATO</a>
         </nav>
         <div class="menu-icon" onClick={toggleMenu}>
             ☰

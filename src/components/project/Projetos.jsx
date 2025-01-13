@@ -59,7 +59,7 @@ function Projects() {
   };
 
   return (
-    <section className='project'>
+    <section className='project' id='project'>
       <div className="projects-carousel">
         <button className="carousel-button left" onClick={prevProject}>
           &lt;
